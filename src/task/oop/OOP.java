@@ -6,7 +6,7 @@ public class OOP {
        // man.job();
       // Parent.Child1 den = new Parent.Child1();
        //den.sum(10,5);
-
+//Проверка github
 
     }
 
