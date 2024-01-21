@@ -14,7 +14,7 @@ public class Methods {
         int max = 1000;
         int b = 2;
         //   System.out.println(booleanGo(string,a));
-        System.out.println(wallet(a,max));
+        System.out.println(exeption(boolean1,boolean2));
         // System.out.println(Arrays.toString(sumArray(massiv)));
         //System.out.println(vozrast(a)+ " Месяцев");
         //System.out.println(arrays(massiv));
@@ -56,21 +56,14 @@ public class Methods {
     // TODO: Создайте метод который принимает 2 булевые переменные . Если обе true , верни true , если хоть одна из них true верни true ,
 //  если обе false верни false
     public static boolean exeption(boolean boolean1, boolean boolean2) {
-        if (boolean1 == true || boolean2 == true) {
-            return true;
-        } else {
-            return false;
-        }
+       return (boolean1 == false || boolean2 == false) ;
+
 
     }
 
     // TODO: Создайте метод который принимает число и вернет true если оно четное , и false если оно не четное
-    public static boolean chetnoe(int a) {
-        if (a % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+    public static boolean chetnoe(int num) {
+        return num % 2 == 0 ;
 
 
     }
@@ -80,8 +73,8 @@ public class Methods {
     public static String array(int[] massiv) {
         boolean god = true;
         boolean goodbay = true;
-        for (int i = 0; i < massiv.length; i++) {
-            if (massiv[i] % 2 == 0) {
+        for (int num:massiv) {
+            if (num % 2 != 0) {
                 god = false;
             } else {
                 goodbay = false;
@@ -157,10 +150,14 @@ public class Methods {
 
 
     // TODO: Создайте метод кошелек , у него есть началная сумма и можно вычитать пока деньги не кончатся или сумма не будет слишком велика
-    public static int wallet(int a, int max) {
-        while (a > 0 && a <= max) {
-            a--;
+     public static int money = 100;
+     public static int value=0;
+
+    public static int wallet( int value,int money) {
+        while (money > 0 && value<=100){
+            money-=20;
+            value++;
         }
-        return a;
+        return money;
     }
 }

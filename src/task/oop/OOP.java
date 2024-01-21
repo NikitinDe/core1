@@ -48,7 +48,7 @@ public class OOP {
         //  5. Пятый метод после слияния двух строк должен обрезать строку и вернуть только ее половину.
         public  static class Child1 extends Parent {
             public int sum(int a, int b) {
-                return a * b;
+                return b * a;
             }
 
             @Override
@@ -129,7 +129,7 @@ public class OOP {
                 private double s;
                 private double v;
 
-                public rectangle(double s) {
+                public rectangle(double s ,double v) {
                     this.s = s;
                     this.v = v;
                 }
