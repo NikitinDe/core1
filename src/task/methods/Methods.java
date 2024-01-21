@@ -56,7 +56,7 @@ public class Methods {
     // TODO: Создайте метод который принимает 2 булевые переменные . Если обе true , верни true , если хоть одна из них true верни true ,
 //  если обе false верни false
     public static boolean exeption(boolean boolean1, boolean boolean2) {
-       return (boolean1 == true || boolean2 == true) ;
+        return (boolean1 == true || boolean2 == true) ;
 
 
     }
@@ -150,8 +150,8 @@ public class Methods {
 
 
     // TODO: Создайте метод кошелек , у него есть началная сумма и можно вычитать пока деньги не кончатся или сумма не будет слишком велика
-     public static int money = 100;
-     public static int value=0;
+    public static int money = 100;
+    public static int value=0;
 
     public static int wallet( int value,int money) {
         while (money > 0 && value<=100){
