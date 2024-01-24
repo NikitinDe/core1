@@ -56,7 +56,7 @@ public class Methods {
     // TODO: Создайте метод который принимает 2 булевые переменные . Если обе true , верни true , если хоть одна из них true верни true ,
 //  если обе false верни false
     public static boolean exeption(boolean boolean1, boolean boolean2) {
-       return (boolean1 == false || boolean2 == false) ;
+       return (boolean1 == true || boolean2 == true) ;
 
 
     }
